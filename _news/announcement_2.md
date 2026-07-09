@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Graduated with a B.Sc. in Computer Science from Amirkabir University of Technology, ranked 3rd (top 5%) in my cohort.
+Graduated with a B.Sc. in Computer Science from Amirkabir University of Technology, **ranked 3rd (top 5%) in my cohort and GPA 4/4**.

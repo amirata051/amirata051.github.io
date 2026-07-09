@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the **Genomics & Regulatory Systems Unit** at OIST as a Research Intern, working under Prof. Nicholas Luscombe and Dr. Charles Plessy.
+Joined the **Genomics & Regulatory Systems Unit** at **OIST** as a Research Intern, working under **Prof. Nicholas Luscombe and Dr. Charles Plessy**.
