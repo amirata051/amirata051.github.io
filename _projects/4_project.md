@@ -5,7 +5,7 @@ description: NLP-based CV ranking web application
 importance: 4
 category: engineering
 related_publications: false
-github: https://github.com/amirata051/ats
+github: https://github.com/AmirmahdiTavakoli/ATS
 ---
 
 An NLP-based web application built with Python, Flask, and Docker that ranks CVs against job descriptions using RESTful APIs.
