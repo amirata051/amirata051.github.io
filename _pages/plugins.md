@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: plugins
 permalink: /plugins/
@@ -94,4 +94,4 @@ Open a **Plugin Feature Proposal** issue if you want your plugin considered.
 3. Open a PR updating `_data/featured_plugins.yml`.
 4. If requesting default starter bundling, include `Gemfile` and `_config.yml` wiring updates in the same PR.
 
-Featuring and bundling are separate maintainer decisions.
+Featuring and bundling are separate maintainer decisions. -->
