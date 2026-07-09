@@ -3,7 +3,7 @@ github_users:
   - AmirmahdiTavakoli
   - nobletooth
 
-repo_description_lines_max: 10
+repo_description_lines_max: 100
 
 github_repos:
   - amirata051/Bearing-DiffRUL-XJTU-SY
