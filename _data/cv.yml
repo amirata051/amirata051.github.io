@@ -5,7 +5,7 @@ cv:
   phone: "+81 080-1984-3421"
   location: Onna, Okinawa, Japan
   image: ""
-  summary: "Computer Science graduate with a strong foundation in AI and Machine Learning, focused on self-supervised learning, Graph Neural Networks, and generative models. Currently applying these methods to high-dimensional genomic data as a Research Intern at OIST, with prior experience bridging research and scalable, production-grade software engineering."
+  summary: "Computer Science graduate with a strong foundation in AI and Machine Learning, focused on self-supervised learning, Graph Neural Networks, Transformers, and generative models. Currently applying these methods to high-dimensional genomic data as a Research Intern at OIST, with prior experience bridging research and scalable, production-grade software engineering."
 
   social_networks:
     - network: GitHub
