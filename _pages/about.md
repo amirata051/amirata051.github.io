@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <span style="font-weight:700 !important;">Research Intern</span>, <a href='https://www.oist.jp/research/research-units/grsu'>Genomics & Regulatory Systems Unit, OIST</a>. Onna, Okinawa, Japan.
+subtitle: <span style="font-weight:700 !important;">Research Intern, <a href='https://www.oist.jp/research/research-units/grsu'>Genomics & Regulatory Systems Unit, OIST</a>. Onna, Okinawa, Japan.</span>
 
 profile:
   align: right
