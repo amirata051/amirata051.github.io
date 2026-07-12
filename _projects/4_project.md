@@ -2,7 +2,7 @@
 layout: page
 title: Applicant Tracking System (ATS)
 description: NLP-based CV ranking web application
-importance: 4
+importance: 3
 category: engineering
 related_publications: false
 github: https://github.com/AmirmahdiTavakoli/ATS
