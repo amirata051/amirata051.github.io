@@ -2,7 +2,7 @@
 layout: page
 title: Knowledge Graph Generator
 description: A system for generating knowledge graphs from heterogeneous data sources
-importance: 3
+importance: 1
 category: engineering
 related_publications: false
 github: https://github.com/amirata051/kg-generator

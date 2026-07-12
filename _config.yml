@@ -4,19 +4,19 @@
 
 title: Amir Ata Ghaffarian # the website title (if blank, full name will be used instead)
 first_name: Amir Ata
-middle_name: 
+middle_name:
 last_name: Ghaffarian
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email is the best way to reach me — I read everything and try to reply within a day or two.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Amir Ata Ghaffarian — Research Intern at OIST working on self-supervised learning and graph neural networks for genomics, with broader interests in world models, embodied AI, and computational neuroscience.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Amir Ata Ghaffarian, machine learning, deep learning, self-supervised learning, graph neural networks, world models, genomics, computational biology, OIST, PhD applicant # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 💻  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://amirata051.github.io # the base hostname & protocol for your site
 baseurl: #/al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -157,19 +157,13 @@ disqus_shortname: al-folio # put your disqus shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
-# you can display them in your blog by adding a link to the RSS feed.
-# Optional: Set default categories and tags for posts from each source.
+# you can display them in your blog by adding a link to the RSS feed below.
+# Left empty for now — add your own RSS feeds or post URLs when you have them.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+# - name: medium.com
+#     rss_url: https://medium.com/@your-handle/feed
+#     categories: [external-posts]
+#     tags: [medium]
 
 # -----------------------------------------------------------------------------
 # Newsletter
