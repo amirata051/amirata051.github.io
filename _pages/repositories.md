@@ -7,41 +7,25 @@ nav: true
 nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
-
-## GitHub users
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
+<div class="row row-cols-1 row-cols-md-2">
+  {% for item in site.data.repositories.repos %}
+    {% assign repo_name = item.repo | split: '/' | last %}
+    <div class="col">
+      <a href="https://github.com/{{ item.repo }}" target="_blank" rel="noopener">
+        <div class="card h-100 hoverable">
+          <div class="card-body">
+            <h2 class="card-title">{{ repo_name }}</h2>
+            <p class="card-text">{{ item.description }}</p>
+            <div class="row ml-1 mr-1 p-0">
+              <div class="github-icon">
+                <div class="icon" data-toggle="tooltip" title="{{ item.repo }}">
+                  <i class="fa-brands fa-github gh-icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   {% endfor %}
 </div>
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
-
----
-
-{% endfor %}
-{% endif %}
-{% endif %}
-
-{% if site.data.repositories.github_repos %}
-
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-{% endif %}

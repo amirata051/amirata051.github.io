@@ -1,11 +1,14 @@
-github_users:
-  - amirata051
-
-repo_description_lines_max: 100
-
-github_repos:
-  - amirata051/Bearing-DiffRUL-XJTU-SY
-  - amirata051/DiffRUL-CMAPSS
-  - amirata051/kg-generator
-  - AmirmahdiTavakoli/ATS
-  - nobletooth/dotanet
+# Repositories shown on /repositories/. Rendered as plain cards (no external
+# stat-card images from github-readme-stats.vercel.app) so the page never
+# depends on a third-party service being reachable.
+repos:
+  - repo: amirata051/kg-generator
+    description: Generates knowledge graphs from heterogeneous data sources through an idempotent pipeline — FalkorDB, Kafka, MinIO, Redis.
+  - repo: amirata051/DiffRUL-CMAPSS
+    description: Diffusion-based data augmentation for aero-engine remaining-useful-life estimation — PyTorch, DDPM, LSTM/Transformer.
+  - repo: amirata051/Bearing-DiffRUL-XJTU-SY
+    description: Extends the diffusion-based RUL approach to bearing degradation on the XJTU-SY dataset.
+  - repo: AmirmahdiTavakoli/ATS
+    description: NLP-based CV ranking web app using SentenceTransformers and cosine similarity.
+  - repo: nobletooth/dotanet
+    description: Scalable ad-serving platform in Go — auctions, retrieval, and real-time click/impression tracking.
