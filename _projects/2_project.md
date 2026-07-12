@@ -11,7 +11,7 @@ github: https://github.com/amirata051/DiffRUL-CMAPSS
 **Sharif Center for Information Systems and Data Science** — Jan 2025 – Jun 2025
 Supervised by Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban
 
-Built a diffusion-based data augmentation model in PyTorch for aero-engine remaining-useful-life (RUL) estimation on the NASA C-MAPSS dataset, based on a 2024 *Reliability Engineering & System Safety* paper.
+Built a diffusion-based data augmentation model in PyTorch for aero-engine remaining-useful-life (RUL) estimation on the NASA C-MAPSS dataset, based on a 2024 _Reliability Engineering & System Safety_ paper.
 
 ### Highlights
 
