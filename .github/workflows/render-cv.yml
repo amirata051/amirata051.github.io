@@ -1,14 +1,8 @@
 name: Render a CV
+# The published CV PDF (assets/pdf/Amirata_Ghaffarian_CV.pdf) is maintained by hand, and
+# _data/cv.yml uses al_folio_cv template fields that RenderCV's strict schema rejects,
+# so this workflow is manual-only instead of running (and failing) on every cv.yml push.
 on:
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - "_data/cv.yml"
-      - "assets/rendercv/design.yaml"
-      - "assets/rendercv/locale.yaml"
-      - "assets/rendercv/settings.yaml"
   workflow_call:
   workflow_dispatch:
 permissions:
