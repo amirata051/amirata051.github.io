@@ -2,7 +2,7 @@
 layout: page
 title: Search Engine
 description: An information-retrieval system with dense and sparse retrieval
-importance: 2
+importance: 3
 category: engineering
 related_publications: false
 github: https://github.com/amirata051/Information-Retrieval

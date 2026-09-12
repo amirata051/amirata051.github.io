@@ -1,11 +1,14 @@
+# Source of truth: assets/pdf/Amirata_Ghaffarian_CV.pdf (keep both in sync).
+# Rendered by the al_folio_cv plugin on /cv/ (RenderCV-style field names).
 cv:
   name: Amir Ata Ghaffarian
-  label: AI / Machine Learning Researcher
+  label: AI / Machine Learning Researcher · Research Intern at OIST
   email: amirata.ghafarian@gmail.com
-  phone: "+81 080-1984-3421"
+  phone: "+81 80-1984-3421"
   location: Onna, Okinawa, Japan
+  website: https://amirata051.github.io
   image: ""
-  summary: "Computer Science graduate with a strong foundation in AI and Machine Learning, focused on self-supervised learning, Graph Neural Networks, Transformers, and generative models. Currently applying these methods to high-dimensional genomic data as a Research Intern at OIST, with prior experience bridging research and scalable, production-grade software engineering."
+  summary: "Computer Science graduate passionate about Artificial Intelligence and Machine Learning, experienced in building AI/ML systems and conducting research for real-world applications. Currently a Research Intern at OIST, applying self-supervised learning, Transformers and graph neural networks to high-dimensional genomic data, with an engineering background spanning DevOps/SRE and backend development."
 
   social_networks:
     - network: GitHub
@@ -14,10 +17,8 @@ cv:
       username: amir-ata-ghaffarian
 
   address:
-    street: ""
     city: Onna
     region: Okinawa
-    postalCode: ""
     countryCode: JP
 
   sections:
@@ -29,60 +30,83 @@ cv:
         studyType: B.Sc.
         start_date: 2020
         end_date: 2025
-        score: "4.0/4.0 (18.97/20) — Last year GPA 4.0/4.0 (19.60/20)"
-        courses: "Machine Learning, Deep Learning, Artificial Intelligence, Data Structures & Algorithms, Information Retrieval"
         highlights:
-          - Ranked in the top 5% (3rd) among Computer Science students at Amirkabir University.
-          - Ranked in the top 0.3% (464/150,000) in the National University Entrance Exam (Mathematics).
+          - "GPA: 4.0/4.0 (18.97/20) — last-year GPA 4.0/4.0 (19.60/20)"
+          - "Relevant coursework: Machine Learning, Deep Learning, Artificial Intelligence, Data Structures & Algorithms, Information Retrieval"
+
+    Honors and Awards:
+      - title: Top 0.3% in the National University Entrance Exam (Mathematics)
+        date: 2020-01-01
+        awarder: National Organization for Educational Testing, Iran
+        summary: "Ranked 464th out of ~150,000 participants in the Mathematics track."
+
+      - title: Top 5% (ranked 3rd) among Computer Science students
+        date: 2025-01-01
+        awarder: Amirkabir University of Technology
+        summary: "Ranked 3rd among Computer Science students at Amirkabir University of Technology."
+
+    Interests:
+      - name: Research Interests
+        icon: fa-solid fa-tag
+        keywords:
+          - World Models & Reinforcement Learning
+          - Robotics
+          - Embodied AI
+          - Large Language Models
+          - Neuroscience
+          - Computational Biology
 
     Experience:
       - company: Okinawa Institute of Science and Technology (OIST)
         position: Research Intern
         location: Okinawa, Japan
+        url: https://www.oist.jp/
         start_date: 2026-02
         end_date: Present
-        summary: "Research Intern in the Genomics & Regulatory Systems Unit, supervised by Prof. Nicholas Luscombe and Dr. Charles Plessy. Working at the intersection of AI and bioinformatics."
+        summary: "Genomics & Regulatory Systems Unit, supervised by Prof. Nicholas Luscombe and Dr. Charles Plessy — research at the intersection of AI and bioinformatics."
         highlights:
-          - Applying Self-Supervised Learning (VICReg, JEPA), Transformers, and Graph Neural Networks to decode genomic rearrangement patterns.
-          - Representing pairwise genomic alignments through a multimodal approach (image and text features) to uncover structural variation at scale.
-          - Managing the end-to-end computational pipeline on an HPC cluster (SLURM, Singularity, PyTorch DDP) for scalability and reproducibility.
+          - Applying advanced deep learning architectures — self-supervised learning and graph neural networks — to decode genomic rearrangement patterns.
+          - Representing pairwise genome alignments through a multimodal approach to uncover structural variation at scale.
+          - Managing the end-to-end computational pipeline on an HPC cluster with Slurm and Singularity for scalability and reproducibility.
 
-      - company: Sharif Center for Information Systems and Data Science
-        position: Research Assistant
+      - company: ICT Group
+        position: DevOps Engineer
         location: Tehran, Iran
-        start_date: 2025-01
-        end_date: 2025-06
-        summary: "Research on predictive maintenance for batteries and bearings, supervised by Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban."
+        start_date: 2025-08
+        end_date: 2026-01
         highlights:
-          - Built diffusion-based data augmentation models (DDPM) combined with LSTMs and Transformers for remaining-useful-life estimation.
+          - Supported enterprise infrastructure by deploying and troubleshooting containerized services on Kubernetes.
+          - Built monitoring and centralized-logging workflows with Prometheus, Grafana, Filebeat, and the Elastic Stack.
 
       - company: Neshan
         position: Site Reliability Engineering Intern
         location: Tehran, Iran
+        url: https://neshan.org/
         start_date: 2025-07
         end_date: 2025-08
         summary: "Intensive bootcamp on Site Reliability Engineering."
         highlights:
-          - Hands-on experience with system administration, infrastructure automation, container orchestration, and monitoring systems.
+          - Hands-on experience in system administration, infrastructure automation, container orchestration, and monitoring systems.
+
+      - company: Center for Information Systems and Data Science, Sharif University of Technology
+        position: Research Assistant
+        location: Tehran, Iran
+        start_date: 2025-01
+        end_date: 2025-06
+        summary: "Supervised by Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban."
+        highlights:
+          - Conducted research on predictive maintenance for batteries and bearings using Transformers and diffusion models.
 
       - company: Yektanet
         position: Software Engineering Intern
         location: Tehran, Iran
+        url: https://www.yektanet.com/
         start_date: 2024-06
         end_date: 2024-07
-        summary: "Developed features for the Dotanet Ad Server."
         highlights:
-          - Built ad retrieval, auction, and click/impression tracking features with Go, Docker, PostgreSQL, and Kafka, ensuring scalability across multiple publisher websites.
+          - Developed Dotanet Ad Server features (ad retrieval, auctions, click/impression tracking) with Go, Docker, PostgreSQL, and Kafka, ensuring scalability across multiple publisher websites.
 
-      - company: Quera
-        position: Mentor, Python Bootcamp
-        location: Tehran, Iran
-        start_date: 2023-10
-        end_date: 2023-12
-        highlights:
-          - Created course content and led problem-solving sessions to teach Python fundamentals and coding skills.
-
-      - company: Amirkabir University & Sharif University
+      - company: Amirkabir University of Technology & Sharif University of Technology
         position: Undergraduate Teaching Assistant
         location: Tehran, Iran
         start_date: 2022
@@ -93,41 +117,89 @@ cv:
           - "Image Processing (Prof. Mostafa Shamsi, Amirkabir University)"
           - "Operating Systems, Software Engineering (Prof. Zahra Ghorbanali, Amirkabir University)"
 
-    Awards:
-      - title: Top 0.3% Nationally in Mathematics
-        authors:
-          - "National University Entrance Exam (Iran)"
-        date: 2020-01-01
-        awarder: National Organization for Educational Testing, Iran
-        summary: "Ranked 464th out of ~150,000 participants in the Mathematics track of the National University Entrance Exam."
+    Projects:
+      - name: MyTorch — Deep Learning Framework
+        url: https://github.com/amirata051/mytorch
+        summary: "From-scratch, NumPy-based automatic-differentiation and neural-network framework with a PyTorch-like API: forward- and reverse-mode AD, optimizers, training diagnostics, and reproducible run tracking."
+        highlights:
+          - Built with an agentic coding partner; every generated change validated through 1,200+ Python tests, gradient checks, strict type/lint gates, multi-version CI, and benchmarks.
+          - Detailed English technical documentation.
 
-      - title: Top 5% (3rd) — Computer Science Cohort
-        authors:
-          - "Amirkabir University of Technology"
-        date: 2025-01-01
-        awarder: Amirkabir University of Technology
-        summary: "Ranked 3rd among Computer Science students at Amirkabir University of Technology."
+      - name: Knowledge Graph Generator
+        url: https://github.com/amirata051/kg-generator
+        summary: "System to generate knowledge graphs from various data sources in Python."
+        highlights:
+          - Integrated with FalkorDB for graph storage, Kafka for real-time data processing, MinIO for object storage, and Redis for idempotency.
+
+      - name: DiffRUL-CMAPSS
+        url: https://github.com/amirata051/DiffRUL-CMAPSS
+        summary: "Diffusion-based data augmentation model (PyTorch) for aero-engine remaining-useful-life estimation, based on a 2024 RESS paper."
+        highlights:
+          - Integrates LSTM, Transformers, and Denoising Diffusion Probabilistic Models (DDPM).
+
+      - name: Search Engine
+        url: https://github.com/amirata051/Information-Retrieval
+        summary: "Information-retrieval system in Python with TF-IDF and ParsBERT."
+        highlights:
+          - K-Means clustering and FAISS for efficient document retrieval.
+
+      - name: Dotanet
+        url: https://github.com/nobletooth/dotanet
+        summary: "Scalable ad platform (Go, PostgreSQL, Kafka) with RESTful APIs for ad serving, auctions, and real-time tracking."
 
     Skills:
       - name: Programming Languages
-        level: ""
         icon: fa-solid fa-code
-        keywords: "Python, Golang, C/C++, Java"
+        keywords: [Python, Golang, C/C++, Java]
 
-      - name: ML / DL Frameworks
-        level: ""
+      - name: Frameworks & Libraries
         icon: fa-solid fa-brain
-        keywords: "PyTorch, TensorFlow, Hugging Face Transformers, ViT, Keras, Scikit-learn, OpenCV, NLTK"
+        keywords: [NumPy, Pandas, TensorFlow, PyTorch, Scikit-learn, OpenCV, NLTK, FastAPI, Gin, Django]
 
-      - name: Data & Infrastructure
-        level: ""
-        icon: fa-solid fa-server
-        keywords: "MySQL, PostgreSQL, Redis, FalkorDB, MinIO, Kafka"
+      - name: Databases
+        icon: fa-solid fa-database
+        keywords: [MySQL, PostgreSQL, Redis, FalkorDB, MinIO]
 
-      - name: Tools & Systems
-        level: ""
+      - name: Tools
         icon: fa-solid fa-gears
-        keywords: "Linux, Git, Docker, Docker Compose, Kubernetes, Slurm, Singularity, Prometheus, Grafana, Nginx, GitLab CI/CD, Postman"
+        keywords: [Linux, Git, Docker, Docker Compose, Kubernetes, Slurm, Singularity, Kafka, Prometheus, Grafana, Nginx, GitLab CI/CD, ELK Stack]
+
+    Certificates:
+      - name: Machine Learning Specialization
+        date: 2024-05-01
+        issuer: DeepLearning.AI / Stanford University
+        url: https://www.coursera.org/account/accomplishments/specialization/VEXCVG9FBVJ4
+        icon: fa-solid fa-award
+
+      - name: Neuromatch Deep Learning Course
+        date: 2025-07-01
+        issuer: Neuromatch
+        url: https://portal.neuromatchacademy.org/certificate/c2b73e2c-0375-49ef-99c6-5ab7f2431969
+        icon: fa-solid fa-award
+
+      - name: Foundational Cloud Practitioner
+        date: 2025-09-01
+        issuer: Cloud Academy
+        url: https://academy.cloud.ir/certificate/3027DED-3223AE7-87A1E/
+        icon: fa-solid fa-award
+
+      - name: Project-Oriented Course in Backend Development with Golang
+        date: 2024-12-01
+        issuer: Quera
+        url: https://quera.org/certificate/aX4Bofw0/
+        icon: fa-solid fa-award
+
+      - name: Task-Oriented Course in Linux
+        date: 2024-03-01
+        issuer: Quera
+        url: https://quera.org/certificate/Rf7AFiAk/
+        icon: fa-solid fa-award
+
+      - name: Advanced Algorithmic Thinking and Data Structure
+        date: 2023-10-01
+        issuer: Quera
+        url: https://quera.org/certificate/cXyXy3Oz/
+        icon: fa-solid fa-award
 
     Languages:
       - name: Persian
@@ -135,70 +207,3 @@ cv:
 
       - name: English
         summary: "Fluent"
-
-    Interests:
-      - name: Research Interests
-        icon: fa-solid fa-tag
-        keywords: "Deep Learning, World Models & Reinforcement Learning, Robotics, Embodied AI, Neuroscience, Computational Biology"
-
-    Certificates:
-      - name: Machine Learning Specialization
-        date: 2024-05-01
-        issuer: DeepLearning.AI / Stanford University
-        icon: fa-solid fa-award
-
-      - name: Neuromatch Deep Learning Course
-        date: 2025-07-01
-        issuer: Neuromatch
-        icon: fa-solid fa-award
-
-      - name: Foundational Cloud Practitioner
-        date: 2025-09-01
-        issuer: Cloud Academy
-        icon: fa-solid fa-award
-
-      - name: Project-Oriented Course in Backend Development with Golang
-        date: 2024-12-01
-        issuer: Quera
-        icon: fa-solid fa-award
-
-      - name: Task-Oriented Course in Linux
-        date: 2024-03-01
-        issuer: Quera
-        icon: fa-solid fa-award
-
-      - name: Advanced Algorithmic Thinking and Data Structures
-        date: 2023-10-01
-        issuer: Quera
-        icon: fa-solid fa-award
-
-    Projects:
-      - name: Scrambling in the Tree of Life
-        summary: "Self-supervised deep learning to discover genomic rearrangement topology patterns across bacterial genome-pair alignments. Set Transformer with VICReg loss on 5D point clouds, trained via PyTorch DDP on 4x A100 GPUs."
-        highlights:
-          - Self-Supervised Learning (VICReg)
-          - Set Transformer, PMA pooling
-        start_date: 2026-02-01
-        end_date: ""
-
-      - name: DiffRUL-CMAPSS
-        summary: "Diffusion-based data augmentation model (PyTorch) for aero-engine remaining-useful-life estimation, integrating LSTM, Transformers, and DDPM."
-        highlights:
-          - Denoising Diffusion Probabilistic Models
-          - LSTM + Transformer hybrid architecture
-        start_date: 2025-01-01
-        end_date: 2025-06-01
-
-      - name: Knowledge Graph Generator
-        summary: "System to generate knowledge graphs from various data sources in Python, integrated with FalkorDB, Kafka, MinIO, and Redis."
-        highlights:
-          - Graph storage and real-time data processing
-        start_date: ""
-        end_date: ""
-
-      - name: Applicant Tracking System (ATS)
-        summary: "NLP-based web app (Python, Flask, Docker) with RESTful APIs to rank CVs using SentenceTransformers and cosine similarity."
-        highlights:
-          - Semantic similarity ranking
-        start_date: ""
-        end_date: ""

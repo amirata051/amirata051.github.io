@@ -26,10 +26,53 @@ latest_posts:
   limit: 3
 ---
 
-I am a Computer Science graduate and Research Intern in the [Genomics & Regulatory Systems Unit](https://www.oist.jp/research/research-units/grsu) at the Okinawa Institute of Science and Technology (OIST), working under Prof. Nicholas Luscombe and Dr. Charles Plessy. My work sits at the intersection of deep learning and biology, where I build self-supervised models to uncover structural patterns in genomic data.
+I am a Research Intern in the [Genomics & Regulatory Systems Unit](https://www.oist.jp/research/research-units/grsu) at the Okinawa Institute of Science and Technology (OIST), working under Prof. Nicholas Luscombe and Dr. Charles Plessy. My research sits at the intersection of AI and bioinformatics: I apply **self-supervised learning, Transformers, and graph neural networks** to decode genomic rearrangement patterns, representing pairwise whole-genome alignments through a multimodal approach to uncover structural variation at scale. I also run the end-to-end computational pipeline behind this work on OIST's HPC cluster (Slurm, Singularity, PyTorch DDP).
 
-I hold a B.Sc. in Computer Science from Amirkabir University of Technology (Tehran Polytechnic), where I graduated top of my cohort. My research interests span **deep learning, world models and reinforcement learning, robotics, embodied AI, and computational biology** — I am especially drawn to problems where learning good representations of structured, high-dimensional data is the key bottleneck.
+I hold a B.Sc. in Computer Science from [Amirkabir University of Technology](https://aut.ac.ir/) (Tehran Polytechnic), where I graduated with a 4.0/4.0 GPA and ranked 3rd in my cohort, after placing in the top 0.3% of Iran's national university entrance exam in mathematics. My research interests span **world models & reinforcement learning, robotics, embodied AI, large language models, neuroscience, and computational biology** — I am especially drawn to problems where learning good representations of structured, high-dimensional data is the key bottleneck.
 
-Before moving into research, I worked as a software and SRE/DevOps engineer, which shapes how I approach research today: I care as much about building robust, scalable pipelines as I do about the underlying models. I currently manage an end-to-end deep learning pipeline on an HPC cluster (SLURM, Singularity, PyTorch DDP) as part of my work at OIST.
+Before OIST I worked as a DevOps engineer at ICT Group, completed a Site Reliability Engineering bootcamp at [Neshan](https://neshan.org/), was a research assistant at Sharif University's Center for Information Systems and Data Science (diffusion models and Transformers for predictive maintenance), and interned as a software engineer at [Yektanet](https://www.yektanet.com/). I have also served as a teaching assistant for machine learning, AI, algorithms, and image-processing courses at Amirkabir and Sharif. That engineering background shapes how I approach research: I care as much about robust, reproducible pipelines as I do about the models themselves. On the side I build [MyTorch](https://github.com/amirata051/mytorch), a from-scratch automatic-differentiation and neural-network framework with a PyTorch-like API, verified by 1,200+ tests.
 
 I am currently applying for Ph.D. positions starting in 2027. Feel free to reach out if my research interests overlap with yours.
+
+<!-- Profile photo hover effect: the photo cross-fades into a Starry-Night-style painting
+     (assets/img/prof_pic_painting.jpg) on hover; on touch screens a tap toggles it. -->
+<style>
+  .profile picture {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    box-shadow:
+      0 2px 5px #00000029,
+      0 2px 10px #0000001f;
+    background: url("{{ '/assets/img/prof_pic_painting.jpg' | relative_url }}") center / cover no-repeat;
+  }
+  .profile picture img {
+    display: block;
+    box-shadow: none;
+    transition: opacity 0.6s ease;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .profile picture:hover img {
+      opacity: 0;
+    }
+  }
+  .profile picture.is-painting img {
+    opacity: 0;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .profile picture img {
+      transition: none;
+    }
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var picture = document.querySelector(".profile picture");
+    if (!picture) return;
+    // Touch taps toggle the painting (mouse/trackpad users get the :hover cross-fade instead).
+    picture.addEventListener("pointerup", function (event) {
+      if (event.pointerType === "touch") picture.classList.toggle("is-painting");
+    });
+  });
+</script>

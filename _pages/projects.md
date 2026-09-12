@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected research and engineering projects — from self-supervised learning and diffusion models to information retrieval and scalable backend systems.
+description: Selected research and engineering projects — from self-supervised learning, diffusion models, and a from-scratch deep learning framework to information retrieval and scalable backend systems.
 nav: true
 nav_order: 3
 display_categories: [research, engineering]

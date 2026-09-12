@@ -1,221 +1,278 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "einstein@example.com",
-    "phone": "(912) 123-4567",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Amir Ata Ghaffarian",
+    "label": "AI / Machine Learning Researcher · Research Intern at OIST",
+    "email": "amirata.ghafarian@gmail.com",
+    "phone": "+81 80-1984-3421",
+    "url": "https://amirata051.github.io",
+    "summary": "Computer Science graduate passionate about Artificial Intelligence and Machine Learning, experienced in building AI/ML systems and conducting research for real-world applications. Currently a Research Intern at OIST, applying self-supervised learning, Transformers and graph neural networks to high-dimensional genomic data, with an engineering background spanning DevOps/SRE and backend development.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Onna",
+      "countryCode": "JP",
+      "region": "Okinawa"
     },
-    "profiles": []
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "amirata051",
+        "url": "https://github.com/amirata051"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "amir-ata-ghaffarian",
+        "url": "https://www.linkedin.com/in/amir-ata-ghaffarian/"
+      }
+    ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Princeton University, NJ",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity", "Description 2."]
+      "name": "Okinawa Institute of Science and Technology (OIST)",
+      "position": "Research Intern",
+      "location": "Okinawa, Japan",
+      "url": "https://www.oist.jp/",
+      "startDate": "2026-02-01",
+      "summary": "Genomics & Regulatory Systems Unit, supervised by Prof. Nicholas Luscombe and Dr. Charles Plessy — research at the intersection of AI and bioinformatics.",
+      "highlights": [
+        "Applying advanced deep learning architectures — self-supervised learning and graph neural networks — to decode genomic rearrangement patterns.",
+        "Representing pairwise genome alignments through a multimodal approach to uncover structural variation at scale.",
+        "Managing the end-to-end computational pipeline on an HPC cluster with Slurm and Singularity for scalability and reproducibility."
+      ],
+      "endDate": "Present"
     },
     {
-      "name": "California Institute of Technology",
-      "position": "Visiting Professor",
-      "location": "Pasadena, California, US",
-      "startDate": "1933-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": ["Description 1.", "Description 2."]
+      "name": "ICT Group",
+      "position": "DevOps Engineer",
+      "location": "Tehran, Iran",
+      "startDate": "2025-08-01",
+      "endDate": "2026-01-01",
+      "highlights": [
+        "Supported enterprise infrastructure by deploying and troubleshooting containerized services on Kubernetes.",
+        "Built monitoring and centralized-logging workflows with Prometheus, Grafana, Filebeat, and the Elastic Stack."
+      ]
     },
     {
-      "name": "Kaiser Wilhelm Institute for Physics",
-      "position": "Director",
-      "location": "Berlin, Germany",
-      "startDate": "1917-01-01",
-      "endDate": "1933-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "Neshan",
+      "position": "Site Reliability Engineering Intern",
+      "location": "Tehran, Iran",
+      "url": "https://neshan.org/",
+      "startDate": "2025-07-01",
+      "endDate": "2025-08-01",
+      "summary": "Intensive bootcamp on Site Reliability Engineering.",
+      "highlights": ["Hands-on experience in system administration, infrastructure automation, container orchestration, and monitoring systems."]
     },
     {
-      "name": "Karl-Ferdinand University",
-      "position": "Professor of Theoretical Physics",
-      "location": "Prague, Czechoslovakia",
-      "startDate": "1911-01-01",
-      "endDate": "1917-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "Center for Information Systems and Data Science, Sharif University of Technology",
+      "position": "Research Assistant",
+      "location": "Tehran, Iran",
+      "startDate": "2025-01-01",
+      "endDate": "2025-06-01",
+      "summary": "Supervised by Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban.",
+      "highlights": ["Conducted research on predictive maintenance for batteries and bearings using Transformers and diffusion models."]
     },
     {
-      "name": "University of Zurich",
-      "position": "Associate Professor of Theoretical Physics",
-      "location": "Zurich, Switzerland",
-      "startDate": "1909-01-01",
-      "endDate": "1911-01-01",
-      "summary": "",
-      "highlights": []
+      "name": "Yektanet",
+      "position": "Software Engineering Intern",
+      "location": "Tehran, Iran",
+      "url": "https://www.yektanet.com/",
+      "startDate": "2024-06-01",
+      "endDate": "2024-07-01",
+      "highlights": [
+        "Developed Dotanet Ad Server features (ad retrieval, auctions, click/impression tracking) with Go, Docker, PostgreSQL, and Kafka, ensuring scalability across multiple publisher websites."
+      ]
+    },
+    {
+      "name": "Amirkabir University of Technology & Sharif University of Technology",
+      "position": "Undergraduate Teaching Assistant",
+      "location": "Tehran, Iran",
+      "startDate": "2022-01-01",
+      "endDate": "2025-01-01",
+      "highlights": [
+        "Machine Learning (Prof. Ali Sharifi-Zarchi, Sharif University)",
+        "Advanced Programming, AI, Algorithms (Prof. Mehdi Ghatee, Amirkabir University)",
+        "Image Processing (Prof. Mostafa Shamsi, Amirkabir University)",
+        "Operating Systems, Software Engineering (Prof. Zahra Ghorbanali, Amirkabir University)"
+      ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Physics",
-      "studyType": "PhD",
-      "startDate": "1900-01-01",
-      "endDate": "1905-01-01",
-      "score": "",
-      "courses": ["Theory of Relativity"],
-      "highlights": ["Description 1.", "Description 2."]
-    },
-    {
-      "institution": "Eidgenössische Technische Hochschule",
-      "location": "Zurich, Switzerland",
-      "area": "Physics",
-      "studyType": "Federal teaching diploma",
-      "startDate": "1896-01-01",
-      "endDate": "1900-01-01",
-      "score": "",
+      "institution": "Amirkabir University of Technology (Tehran Polytechnic)",
+      "location": "Tehran, Iran",
+      "url": "https://aut.ac.ir/",
+      "area": "Computer Science",
+      "studyType": "B.Sc.",
+      "startDate": "2020-01-01",
+      "endDate": "2025-01-01",
+      "score": "4.0/4.0 (18.97/20)",
       "courses": [],
-      "highlights": ["Description 1.", "Description 2."]
+      "highlights": [
+        "GPA: 4.0/4.0 (18.97/20) — last-year GPA 4.0/4.0 (19.60/20)",
+        "Relevant coursework: Machine Learning, Deep Learning, Artificial Intelligence, Data Structures & Algorithms, Information Retrieval"
+      ]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Top 0.3% in the National University Entrance Exam (Mathematics)",
+      "date": "2020-01-01",
+      "awarder": "National Organization for Educational Testing, Iran",
+      "summary": "Ranked 464th out of ~150,000 participants in the Mathematics track."
     },
     {
-      "title": "Max Planck Medal",
-      "date": "2029-01-01",
-      "awarder": "German Physical Society",
-      "summary": ""
+      "title": "Top 5% (ranked 3rd) among Computer Science students",
+      "date": "2025-01-01",
+      "awarder": "Amirkabir University of Technology",
+      "summary": "Ranked 3rd among Computer Science students at Amirkabir University of Technology."
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-location-dot"
+      "name": "Machine Learning Specialization",
+      "date": "2024-05-01",
+      "issuer": "DeepLearning.AI / Stanford University",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/VEXCVG9FBVJ4",
+      "icon": "fa-solid fa-award"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-tag"
+      "name": "Neuromatch Deep Learning Course",
+      "date": "2025-07-01",
+      "issuer": "Neuromatch",
+      "url": "https://portal.neuromatchacademy.org/certificate/c2b73e2c-0375-49ef-99c6-5ab7f2431969",
+      "icon": "fa-solid fa-award"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "icon": "fa-solid fa-envelope"
+      "name": "Foundational Cloud Practitioner",
+      "date": "2025-09-01",
+      "issuer": "Cloud Academy",
+      "url": "https://academy.cloud.ir/certificate/3027DED-3223AE7-87A1E/",
+      "icon": "fa-solid fa-award"
+    },
+    {
+      "name": "Project-Oriented Course in Backend Development with Golang",
+      "date": "2024-12-01",
+      "issuer": "Quera",
+      "url": "https://quera.org/certificate/aX4Bofw0/",
+      "icon": "fa-solid fa-award"
+    },
+    {
+      "name": "Task-Oriented Course in Linux",
+      "date": "2024-03-01",
+      "issuer": "Quera",
+      "url": "https://quera.org/certificate/Rf7AFiAk/",
+      "icon": "fa-solid fa-award"
+    },
+    {
+      "name": "Advanced Algorithmic Thinking and Data Structure",
+      "date": "2023-10-01",
+      "issuer": "Quera",
+      "url": "https://quera.org/certificate/cXyXy3Oz/",
+      "icon": "fa-solid fa-award"
     }
   ],
-  "publications": [
-    {
-      "name": "Zur Elektrodynamik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
+  "publications": [],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Programming Languages",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "Golang", "C/C++", "Java"]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "icon": "fa-solid fa-brain",
+      "keywords": ["NumPy", "Pandas", "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLTK", "FastAPI", "Gin", "Django"]
+    },
+    {
+      "name": "Databases",
+      "icon": "fa-solid fa-database",
+      "keywords": ["MySQL", "PostgreSQL", "Redis", "FalkorDB", "MinIO"]
+    },
+    {
+      "name": "Tools",
+      "icon": "fa-solid fa-gears",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Linux",
+        "Git",
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "Slurm",
+        "Singularity",
+        "Kafka",
+        "Prometheus",
+        "Grafana",
+        "Nginx",
+        "GitLab CI/CD",
+        "ELK Stack"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "Persian",
+      "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Research Interests",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "World Models & Reinforcement Learning",
+        "Robotics",
+        "Embodied AI",
+        "Large Language Models",
+        "Neuroscience",
+        "Computational Biology"
       ]
     }
   ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
-    },
-    {
-      "name": "Professor Jane Smith",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit."
-    }
-  ],
+  "references": [],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01"
+      "name": "MyTorch — Deep Learning Framework",
+      "url": "https://github.com/amirata051/mytorch",
+      "summary": "From-scratch, NumPy-based automatic-differentiation and neural-network framework with a PyTorch-like API: forward- and reverse-mode AD, optimizers, training diagnostics, and reproducible run tracking.",
+      "highlights": [
+        "Built with an agentic coding partner; every generated change validated through 1,200+ Python tests, gradient checks, strict type/lint gates, multi-version CI, and benchmarks.",
+        "Detailed English technical documentation."
+      ],
+      "startDate": "2026-06-01",
+      "endDate": "Present"
+    },
+    {
+      "name": "Knowledge Graph Generator",
+      "url": "https://github.com/amirata051/kg-generator",
+      "summary": "System to generate knowledge graphs from various data sources in Python.",
+      "highlights": [
+        "Integrated with FalkorDB for graph storage, Kafka for real-time data processing, MinIO for object storage, and Redis for idempotency."
+      ]
+    },
+    {
+      "name": "DiffRUL-CMAPSS",
+      "url": "https://github.com/amirata051/DiffRUL-CMAPSS",
+      "summary": "Diffusion-based data augmentation model (PyTorch) for aero-engine remaining-useful-life estimation, based on a 2024 RESS paper.",
+      "highlights": ["Integrates LSTM, Transformers, and Denoising Diffusion Probabilistic Models (DDPM)."],
+      "startDate": "2025-01-01",
+      "endDate": "2025-06-01"
+    },
+    {
+      "name": "Search Engine",
+      "url": "https://github.com/amirata051/Information-Retrieval",
+      "summary": "Information-retrieval system in Python with TF-IDF and ParsBERT.",
+      "highlights": ["K-Means clustering and FAISS for efficient document retrieval."]
+    },
+    {
+      "name": "Dotanet",
+      "url": "https://github.com/nobletooth/dotanet",
+      "summary": "Scalable ad platform (Go, PostgreSQL, Kafka) with RESTful APIs for ad serving, auctions, and real-time tracking.",
+      "highlights": [],
+      "startDate": "2024-06-01",
+      "endDate": "Present"
     }
   ]
 }

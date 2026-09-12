@@ -9,12 +9,11 @@ last_name: Ghaffarian
 contact_note: >
   Email is the best way to reach me — I read everything and try to reply within a day or two.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Amir Ata Ghaffarian — Research Intern at OIST working on self-supervised learning and graph neural networks for genomics, with broader interests in world models, embodied AI, and computational neuroscience.
+  Amir Ata Ghaffarian — Research Intern in the Genomics & Regulatory Systems Unit at OIST, applying self-supervised learning, Transformers, and graph neural networks to genomic rearrangements. Interested in world models & RL, robotics, embodied AI, LLMs, neuroscience, and computational biology.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: Amir Ata Ghaffarian, machine learning, deep learning, self-supervised learning, graph neural networks, world models, genomics, computational biology, OIST, PhD applicant # add your own keywords or leave empty
+keywords: Amir Ata Ghaffarian, machine learning, deep learning, self-supervised learning, graph neural networks, Transformers, world models, reinforcement learning, embodied AI, large language models, genomics, computational biology, OIST, MyTorch, PhD applicant # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -87,7 +86,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false # blog is disabled; keep the template posts out of the search palette
 bib_search: true
 
 # Dimensions
@@ -122,8 +121,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Amir Ata Ghaffarian # blog_name will be displayed in your blog page
+blog_description: notes on machine learning, genomics, and engineering
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -152,7 +151,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: al-folio # put your disqus shortname (kept: test/integration_comments.sh expects the Disqus embed on the demo post)
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -287,6 +286,13 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  # The al-folio demo posts are kept only because the starter's integration/visual tests
+  # build against them; the blog page is disabled, so keep them out of the sitemap.
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
@@ -335,8 +341,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Ghaffarian]
+  first_name: [Amir Ata, A. A., Amirata]
 
   style: apa
   locale: en
