@@ -37,9 +37,6 @@ I am currently applying for Ph.D. positions starting in 2027. Feel free to reach
 <!-- Profile photo hover effect: the photo cross-fades into a Starry-Night-style painting
      (assets/img/prof_pic_painting.jpg) on hover; on touch screens a tap toggles it. -->
 <style>
-  .profile figure {
-    margin: 0;
-  }
   .profile picture {
     display: block;
     position: relative;
@@ -55,7 +52,7 @@ I am currently applying for Ph.D. positions starting in 2027. Feel free to reach
     box-shadow: none;
     transition: opacity 0.6s ease;
   }
-  @media (hover: hover) {
+  @media (hover: hover) and (pointer: fine) {
     .profile picture:hover img {
       opacity: 0;
     }
@@ -72,9 +69,10 @@ I am currently applying for Ph.D. positions starting in 2027. Feel free to reach
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     var picture = document.querySelector(".profile picture");
-    if (!picture || window.matchMedia("(hover: hover)").matches) return;
-    picture.addEventListener("click", function () {
-      picture.classList.toggle("is-painting");
+    if (!picture) return;
+    // Touch taps toggle the painting (mouse/trackpad users get the :hover cross-fade instead).
+    picture.addEventListener("pointerup", function (event) {
+      if (event.pointerType === "touch") picture.classList.toggle("is-painting");
     });
   });
 </script>

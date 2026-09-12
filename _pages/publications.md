@@ -25,7 +25,7 @@ nav_order: 2
   <p>
     In the meantime, the <a href="{{ '/projects/' | relative_url }}">projects</a> page is the
     best snapshot of what I've been building, and my <a href="{{ '/cv/' | relative_url }}">CV</a>
-    has the full picture. Feel free to <a href="mailto:{{ site.email }}">reach out</a> if you'd
+    has the full picture. Feel free to <a href="mailto:{{ site.data.socials.email }}">reach out</a> if you'd
     like to talk about any of it.
   </p>
 </div>

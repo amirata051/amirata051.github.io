@@ -151,7 +151,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: al-folio # put your disqus shortname (kept: test/integration_comments.sh expects the Disqus embed on the demo post)
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -284,6 +284,13 @@ plugins:
 defaults:
   - scope:
       path: "assets"
+    values:
+      sitemap: false
+  # The al-folio demo posts are kept only because the starter's integration/visual tests
+  # build against them; the blog page is disabled, so keep them out of the sitemap.
+  - scope:
+      path: ""
+      type: "posts"
     values:
       sitemap: false
 

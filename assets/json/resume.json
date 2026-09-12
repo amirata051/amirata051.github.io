@@ -2,7 +2,6 @@
   "basics": {
     "name": "Amir Ata Ghaffarian",
     "label": "AI / Machine Learning Researcher · Research Intern at OIST",
-    "image": "",
     "email": "amirata.ghafarian@gmail.com",
     "phone": "+81 80-1984-3421",
     "url": "https://amirata051.github.io",
@@ -32,13 +31,13 @@
       "location": "Okinawa, Japan",
       "url": "https://www.oist.jp/",
       "startDate": "2026-02-01",
-      "endDate": "",
       "summary": "Genomics & Regulatory Systems Unit, supervised by Prof. Nicholas Luscombe and Dr. Charles Plessy — research at the intersection of AI and bioinformatics.",
       "highlights": [
         "Applying advanced deep learning architectures — self-supervised learning and graph neural networks — to decode genomic rearrangement patterns.",
         "Representing pairwise genome alignments through a multimodal approach to uncover structural variation at scale.",
         "Managing the end-to-end computational pipeline on an HPC cluster with Slurm and Singularity for scalability and reproducibility."
-      ]
+      ],
+      "endDate": "Present"
     },
     {
       "name": "ICT Group",
@@ -46,7 +45,6 @@
       "location": "Tehran, Iran",
       "startDate": "2025-08-01",
       "endDate": "2026-01-01",
-      "summary": "",
       "highlights": [
         "Supported enterprise infrastructure by deploying and troubleshooting containerized services on Kubernetes.",
         "Built monitoring and centralized-logging workflows with Prometheus, Grafana, Filebeat, and the Elastic Stack."
@@ -78,7 +76,6 @@
       "url": "https://www.yektanet.com/",
       "startDate": "2024-06-01",
       "endDate": "2024-07-01",
-      "summary": "",
       "highlights": [
         "Developed Dotanet Ad Server features (ad retrieval, auctions, click/impression tracking) with Go, Docker, PostgreSQL, and Kafka, ensuring scalability across multiple publisher websites."
       ]
@@ -89,7 +86,6 @@
       "location": "Tehran, Iran",
       "startDate": "2022-01-01",
       "endDate": "2025-01-01",
-      "summary": "",
       "highlights": [
         "Machine Learning (Prof. Ali Sharifi-Zarchi, Sharif University)",
         "Advanced Programming, AI, Algorithms (Prof. Mehdi Ghatee, Amirkabir University)",
@@ -178,25 +174,21 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "level": "",
       "icon": "fa-solid fa-code",
       "keywords": ["Python", "Golang", "C/C++", "Java"]
     },
     {
       "name": "Frameworks & Libraries",
-      "level": "",
       "icon": "fa-solid fa-brain",
       "keywords": ["NumPy", "Pandas", "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "NLTK", "FastAPI", "Gin", "Django"]
     },
     {
       "name": "Databases",
-      "level": "",
       "icon": "fa-solid fa-database",
       "keywords": ["MySQL", "PostgreSQL", "Redis", "FalkorDB", "MinIO"]
     },
     {
       "name": "Tools",
-      "level": "",
       "icon": "fa-solid fa-gears",
       "keywords": [
         "Linux",
@@ -218,13 +210,11 @@
   "languages": [
     {
       "language": "Persian",
-      "fluency": "Native speaker",
-      "icon": ""
+      "fluency": "Native speaker"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "fluency": "Fluent"
     }
   ],
   "interests": [
@@ -252,7 +242,7 @@
         "Detailed English technical documentation."
       ],
       "startDate": "2026-06-01",
-      "endDate": ""
+      "endDate": "Present"
     },
     {
       "name": "Knowledge Graph Generator",
@@ -260,9 +250,7 @@
       "summary": "System to generate knowledge graphs from various data sources in Python.",
       "highlights": [
         "Integrated with FalkorDB for graph storage, Kafka for real-time data processing, MinIO for object storage, and Redis for idempotency."
-      ],
-      "startDate": "",
-      "endDate": ""
+      ]
     },
     {
       "name": "DiffRUL-CMAPSS",
@@ -276,9 +264,7 @@
       "name": "Search Engine",
       "url": "https://github.com/amirata051/Information-Retrieval",
       "summary": "Information-retrieval system in Python with TF-IDF and ParsBERT.",
-      "highlights": ["K-Means clustering and FAISS for efficient document retrieval."],
-      "startDate": "",
-      "endDate": ""
+      "highlights": ["K-Means clustering and FAISS for efficient document retrieval."]
     },
     {
       "name": "Dotanet",
@@ -286,7 +272,7 @@
       "summary": "Scalable ad platform (Go, PostgreSQL, Kafka) with RESTful APIs for ad serving, auctions, and real-time tracking.",
       "highlights": [],
       "startDate": "2024-06-01",
-      "endDate": ""
+      "endDate": "Present"
     }
   ]
 }
