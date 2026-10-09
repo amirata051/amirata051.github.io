@@ -1,10 +1,10 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> DiffRUL-CMAPSS | Amir Ata Ghaffarian </title> <meta name="author" content="Amir Ata Ghaffarian"> <meta name="description" content="Diffusion-based data augmentation for aero-engine remaining-useful-life estimation"> <meta name="keywords" content="Amir Ata Ghaffarian, machine learning, deep learning, self-supervised learning, graph neural networks, Transformers, world models, reinforcement learning, embodied AI, large language models, genomics, computational biology, OIST, MyTorch, PhD applicant"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> DiffRUL | Amir Ata Ghaffarian </title> <meta name="author" content="Amir Ata Ghaffarian"> <meta name="description" content="Diffusion-based data augmentation for remaining-useful-life estimation of aero-engines and bearings."> <meta name="keywords" content="Amir Ata Ghaffarian, machine learning, deep learning, self-supervised learning, graph neural networks, reinforcement learning, goal-space planning, world models, embodied AI, genomics, computational biology, OIST, MyTorch, PhD applicant"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
   :root {
     --max-content-width: 930px;
   }
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AC&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://amirata051.github.io/projects/2_project/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
-  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Amir Ata Ghaffarian </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">DiffRUL-CMAPSS</h1> <p class="post-description">Diffusion-based data augmentation for aero-engine remaining-useful-life estimation</p> </header> <article> <p><strong>Sharif Center for Information Systems and Data Science</strong> — Jan 2025 – Jun 2025 Supervised by Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban</p> <p>Built a diffusion-based data augmentation model in PyTorch for aero-engine remaining-useful-life (RUL) estimation on the NASA C-MAPSS dataset, based on a 2024 <em>Reliability Engineering &amp; System Safety</em> paper.</p> <h3 id="highlights">Highlights</h3> <ul> <li>Denoising Diffusion Probabilistic Model (DDPM) for realistic sensor-data augmentation</li> <li>Combined with LSTM and Transformer architectures for downstream RUL prediction</li> <li>Applied to predictive maintenance of batteries and bearings</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Amir Ata Ghaffarian. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Amir Ata</span> Ghaffarian </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">DiffRUL</h1> <p class="post-description">Diffusion-based data augmentation for remaining-useful-life estimation of aero-engines and bearings.</p> </header> <article> <p class="pj-page-meta">Sharif University · 2025 · <a href="https://github.com/amirata051/DiffRUL-CMAPSS" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i> C-MAPSS code</a> · <a href="https://github.com/amirata051/Bearing-DiffRUL-XJTU-SY" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i> XJTU-SY code</a></p> <p>Run-to-failure data is scarce and heavily imbalanced, which limits remaining-useful-life (RUL) models. Following <a href="https://doi.org/10.1016/j.ress.2024.110394" rel="external nofollow noopener" target="_blank">Wang et al. (RESS 2024)</a>, a denoising diffusion model generates realistic degradation sequences to augment training data. Building on the authors’ official code, I adapted the pipeline to two datasets. Research assistantship at Sharif University’s Center for Information Systems and Data Science, supervised by Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban.</p> <ul> <li> <strong>Aero-engines (NASA C-MAPSS).</strong> Diffusion augmentation feeding an LSTM remaining-useful-life model.</li> <li> <strong>Bearings (XJTU-SY).</strong> The same augmentation on rolling-bearing vibration data, with CNN, recurrent and hybrid CNN–LSTM predictors.</li> </ul> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Amir Ata Ghaffarian. Built with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="external nofollow noopener">al-folio</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
@@ -22,89 +22,85 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "publications",
-          description: "No peer-reviewed publications yet — my first preprints are in progress. Manuscripts and talks will appear here as they become available.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-projects",
+  },{id: "nav-projects",
           title: "projects",
-          description: "Selected research and engineering projects — from self-supervised learning, diffusion models, and a from-scratch deep learning framework to information retrieval and scalable backend systems.",
+          description: "Research and engineering work. Open a card for details, figures and code.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "A few repositories I&#39;ve built or contributed to — spanning deep learning research, information retrieval, and backend systems.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-cv",
-          title: "CV",
+          title: "cv",
           description: "Education, research, and engineering experience. A PDF version is available from the button above.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-started-as-a-research-assistant-at-the-sharif-center-for-information-systems-and-data-science-working-on-diffusion-based-predictive-maintenance-under-dr-babak-khalaj-and-dr-mohammad-hossein-rohban",
-          title: 'Started as a Research Assistant at the Sharif Center for Information Systems and...',
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Code behind my research and engineering projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "news-started-as-a-research-assistant-at-sharif-university-s-center-for-information-systems-and-data-science",
+          title: 'Started as a Research Assistant at Sharif University’s Center for Information Systems and...',
           description: "",
-          section: "News",},{id: "news-graduated-with-a-b-sc-in-computer-science-from-amirkabir-university-of-technology-ranked-3rd-top-5-in-my-cohort-and-gpa-4-4",
-          title: 'Graduated with a B.Sc. in Computer Science from Amirkabir University of Technology, ranked...',
+          section: "News",},{id: "news-graduated-from-amirkabir-university-of-technology-with-a-b-sc-in-computer-science-ranked-3rd-in-my-cohort",
+          title: 'Graduated from Amirkabir University of Technology with a B.Sc. in Computer Science, ranked...',
           description: "",
-          section: "News",},{id: "news-joined-ict-group-tehran-as-a-devops-engineer-deploying-containerized-services-on-kubernetes-and-building-monitoring-and-centralized-logging-workflows-with-prometheus-grafana-and-the-elastic-stack",
-          title: 'Joined ICT Group (Tehran) as a DevOps engineer — deploying containerized services on...',
+          section: "News",},{id: "news-joined-ict-group-as-a-devops-engineer",
+          title: 'Joined ICT Group as a DevOps Engineer.',
           description: "",
-          section: "News",},{id: "news-joined-the-genomics-amp-amp-regulatory-systems-unit-at-oist-as-a-research-intern-working-under-prof-nicholas-luscombe-and-dr-charles-plessy",
-          title: 'Joined the Genomics &amp;amp;amp; Regulatory Systems Unit at OIST as a Research Intern,...',
+          section: "News",},{id: "news-joined-the-genomics-amp-amp-regulatory-systems-unit-at-oist-as-a-research-intern",
+          title: 'Joined the Genomics &amp;amp;amp; Regulatory Systems Unit at OIST as a Research Intern....',
           description: "",
-          section: "News",},{id: "news-started-building-mytorch-a-from-scratch-automatic-differentiation-and-neural-network-framework-with-a-pytorch-like-api-now-at-10k-lines-and-1-200-tests",
-          title: 'Started building MyTorch, a from-scratch automatic-differentiation and neural-network framework with a PyTorch-like API...',
+          section: "News",},{id: "news-started-mytorch-a-deep-learning-framework-built-from-scratch-to-learn-how-pytorch-works",
+          title: 'Started MyTorch, a deep learning framework built from scratch to learn how PyTorch...',
+          description: "",
+          section: "News",},{id: "news-released-gsp-fourrooms-a-from-scratch-reproduction-of-goal-space-planning-with-subgoal-models-jmlr-2024-with-an-interactive-report",
+          title: 'Released gsp-fourrooms, a from-scratch reproduction of Goal-Space Planning with Subgoal Models (JMLR 2024),...',
           description: "",
           section: "News",},{id: "projects-scrambling-in-the-tree-of-life",
           title: 'Scrambling in the Tree of Life',
-          description: "Self-supervised deep learning for comparative genomic rearrangement analysis",
+          description: "Self-supervised learning of genome-rearrangement patterns from pairwise whole-genome alignments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-diffrul-cmapss",
-          title: 'DiffRUL-CMAPSS',
-          description: "Diffusion-based data augmentation for aero-engine remaining-useful-life estimation",
+            },},{id: "projects-diffrul",
+          title: 'DiffRUL',
+          description: "Diffusion-based data augmentation for remaining-useful-life estimation of aero-engines and bearings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-knowledge-graph-generator",
           title: 'Knowledge Graph Generator',
-          description: "A system for generating knowledge graphs from heterogeneous data sources",
+          description: "Turns PDF documents into an evolving knowledge graph through a containerized, idempotent pipeline.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-applicant-tracking-system-ats",
-          title: 'Applicant Tracking System (ATS)',
-          description: "NLP-based CV ranking web application",
+            },},{id: "projects-applicant-tracking-system",
+          title: 'Applicant Tracking System',
+          description: "Ranks CVs against a job description using sentence embeddings.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-bearing-diffrul",
-          title: 'Bearing-DiffRUL',
-          description: "Diffusion-based remaining-useful-life estimation for rolling bearings",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
             },},{id: "projects-search-engine",
           title: 'Search Engine',
-          description: "An information-retrieval system with dense and sparse retrieval",
+          description: "An information-retrieval system for Persian text that combines sparse and dense retrieval.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-dotanet-ad-server",
           title: 'Dotanet Ad Server',
-          description: "A scalable ad-serving platform with auctions and real-time tracking",
+          description: "A team-built ad-serving platform with real-time auctions and click and impression tracking.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/7_project/";
             },},{id: "projects-mytorch",
           title: 'MyTorch',
-          description: "A from-scratch deep learning framework you can read end to end, built to learn how PyTorch works",
+          description: "A deep learning framework built from scratch to learn how PyTorch works.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
+            },},{id: "projects-goal-space-planning-reproduced",
+          title: 'Goal-Space Planning, reproduced',
+          description: "A from-scratch reproduction of Goal-Space Planning with Subgoal Models (JMLR 2024) on FourRooms.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/gsp-fourrooms/";
             },},{
         id: 'social-cv',
         title: 'CV',
