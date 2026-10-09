@@ -25,7 +25,7 @@ latest_posts:
 
 I'm a Research Intern in the [Genomics & Regulatory Systems Unit](https://www.oist.jp/research/research-units/grsu) at OIST, working with Prof. Nicholas Luscombe and Dr. Charles Plessy. I use self-supervised learning and graph neural networks to decode how genomes rearrange across the tree of life.
 
-I hold a B.Sc. in Computer Science from [Amirkabir University of Technology](https://aut.ac.ir/) (GPA 4.0/4.0, ranked 3rd in my cohort). Before research I worked as a DevOps and software engineer, so I care about reproducible pipelines as much as about models.
+I hold a B.Sc. in Computer Science from [Amirkabir University of Technology](https://aut.ac.ir/) (GPA 4.0/4.0, ranked 3rd in my cohort). Before OIST I worked as a DevOps engineer and interned in SRE and backend engineering, so I care about reproducible pipelines as much as about models.
 
 I'm interested in world models, reinforcement learning, embodied AI and computational biology, and I'm applying for **Ph.D. positions starting in 2027**.
 

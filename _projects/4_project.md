@@ -17,4 +17,4 @@ related_publications: false
 A web app that takes a job description and a batch of CVs (PDF or text) and returns the best matches.
 
 - **Ranking.** SentenceTransformers embeddings scored by cosine similarity.
-- **App.** Flask with RESTful endpoints, sanitised uploads, and Docker for deployment.
+- **App.** Flask with live progress updates over Socket.IO, sanitised uploads, and Docker for deployment.

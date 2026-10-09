@@ -17,7 +17,7 @@ cv:
 
   address:
     city: Onna
-    region: Okinawa
+    region: Okinawa, Japan
     countryCode: JP
 
   sections:
@@ -162,6 +162,10 @@ cv:
         icon: fa-solid fa-gears
         keywords: [Linux, Git, Docker, Docker Compose, Kubernetes, Slurm, Singularity, Kafka, Prometheus, Grafana, Nginx, GitLab CI/CD, ELK Stack]
 
+      - name: Languages
+        icon: fa-solid fa-language
+        keywords: [Persian (native), English (fluent)]
+
     Certificates:
       - name: Machine Learning Specialization
         date: 2024-05-01
@@ -198,10 +202,3 @@ cv:
         issuer: Quera
         url: https://quera.org/certificate/cXyXy3Oz/
         icon: fa-solid fa-award
-
-    Languages:
-      - name: Persian
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"

@@ -21,16 +21,16 @@ A tabular reproduction of [Goal-Space Planning with Subgoal Models](https://arxi
 
 <div class="stat-grid">
   <div class="stat"><span class="stat-value">18 → 3</span><span class="stat-label">value-iteration sweeps, 104 states vs. 5 subgoals</span></div>
-  <div class="stat"><span class="stat-value">1 → 188</span><span class="stat-label">state–action pairs updated by one episode</span></div>
+  <div class="stat"><span class="stat-value">1 → 188</span><span class="stat-label">state–action pairs updated by one episode, Sarsa(0) vs. GSP + Sarsa(λ)</span></div>
   <div class="stat"><span class="stat-value">35 → 18</span><span class="stat-label">episodes to near-optimal, Sarsa(λ) vs. GSP</span></div>
-  <div class="stat"><span class="stat-value">18 → 7</span><span class="stat-label">episodes to re-route around new lava</span></div>
+  <div class="stat"><span class="stat-value">18 → 7</span><span class="stat-label">episodes to re-route around new lava, Sarsa vs. GSP (consistent init.)</span></div>
 </div>
 
-{% include figure.liquid path="assets/img/projects/gsp_learning_curves.png" class="img-fluid rounded" alt="Learning curves for Sarsa with and without GSP" caption="GSP halves the episodes Sarsa(λ) needs and rescues Sarsa(0), which never gets near-optimal on its own." %}
+{% include figure.liquid path="assets/img/projects/gsp_learning_curves.png" class="img-fluid rounded" alt="Learning curves for Sarsa with and without GSP" caption="GSP halves the episodes Sarsa(λ) needs and rescues Sarsa(0), which is not near-optimal within 200 episodes on its own." %}
 
 ### Highlights
 
-- One command regenerates all 8 experiments, 13 figures and the report in about 3 minutes on one CPU core; `gsp check` verifies 10 numerical invariants, and 34 tests cover the rest.
+- One command regenerates all 8 experiments, their figures and the report in about 3 minutes on one CPU core; `gsp check` verifies 10 numerical invariants, and 34 tests cover the rest.
 - Measured rather than hypothetical: Dyna-Q with 30 planning updates per step still needs 2,732 environment steps for 50 episodes, while GSP needs 1,231 with 30 updates in total.
 - With 20% model noise, bootstrapping from the subgoal values collapses (670 steps per episode) while shaping degrades gracefully (27 steps).
 - Three open discrepancies with the paper are documented with candidate causes.
