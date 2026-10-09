@@ -52,7 +52,7 @@
 html[data-theme="dark"] {
   --global-text-color-light: #9a9a9a;
   --site-border: rgba(255, 255, 255, 0.12);
-  --site-chip-bg: rgba(255, 255, 255, 0.08);
+  --site-chip-bg: rgba(255, 255, 255, 0.05); // keeps chip text at 4.7:1 on dark cards
   --site-shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
@@ -65,7 +65,7 @@ html[data-theme="dark"] {
 .post > article > p,
 .post > article > ul,
 .post > article > ol,
-.post > article > h3 {
+.post > article > h2 {
   max-width: 44rem;
 }
 
@@ -82,6 +82,14 @@ footer.sticky-bottom {
   .container {
     color: var(--global-text-color-light);
   }
+}
+
+// Links inside muted text need a cue besides colour.
+footer.sticky-bottom a,
+.pj-page-meta a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 // Navbar: the magnifier alone is enough; ctrl+k / cmd+k still opens search.
@@ -192,7 +200,7 @@ footer.sticky-bottom {
   color: var(--global-text-color-light);
 }
 
-.post > article > h3 {
+.post > article > h2 {
   margin: 2rem 0 0.75rem;
   font-size: 1.25rem;
   font-weight: 500;
@@ -297,7 +305,7 @@ footer.sticky-bottom {
 
 .pj-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(17rem, 100%), 1fr));
   gap: 1rem;
 }
 
@@ -336,7 +344,7 @@ footer.sticky-bottom {
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: inherit;
+    border-radius: var(--site-radius);
   }
 
   &:focus-visible {
@@ -380,9 +388,16 @@ footer.sticky-bottom {
   }
 }
 
+// The planning animation has an empty band below the boards; show only the top 726 of its 848px.
+.gsp-anim {
+  aspect-ratio: 1536 / 726;
+  object-fit: cover;
+  object-position: 50% 0;
+}
+
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(9.5rem, 100%), 1fr));
   gap: 0.75rem;
   margin: 1.5rem 0 2rem;
 }
@@ -411,7 +426,7 @@ footer.sticky-bottom {
 // Repositories.
 .rp-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr));
   gap: 1rem;
 }
 
@@ -513,6 +528,17 @@ footer.sticky-bottom {
   ul.list-group {
     padding-left: 0;
     list-style: none;
+  }
+
+  // Date badges line up with the entry text, without the theme's hairlines.
+  .date-column {
+    width: auto;
+    transform: translateY(-5px);
+  }
+
+  table.table-cv td {
+    border-top: 0;
+    overflow-wrap: anywhere; // long e-mail addresses wrap on narrow phones
   }
 
   // Entry titles look the same whether or not they carry a link.
