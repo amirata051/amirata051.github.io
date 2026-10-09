@@ -1,14 +1,13 @@
-# Source of truth: assets/pdf/Amirata_Ghaffarian_CV.pdf (keep both in sync).
+# Source of truth: assets/pdf/Amirata_Ghaffarian_CV.pdf (keep both in sync; the gsp-fourrooms project is web-only until the PDF is updated).
 # Rendered by the al_folio_cv plugin on /cv/ (RenderCV-style field names).
 cv:
   name: Amir Ata Ghaffarian
-  label: AI / Machine Learning Researcher · Research Intern at OIST
+  label: Research Intern, OIST · Machine Learning & Genomics
   email: amirata.ghafarian@gmail.com
   phone: "+81 80-1984-3421"
   location: Onna, Okinawa, Japan
-  website: https://amirata051.github.io
   image: ""
-  summary: "Computer Science graduate passionate about Artificial Intelligence and Machine Learning, experienced in building AI/ML systems and conducting research for real-world applications. Currently a Research Intern at OIST, applying self-supervised learning, Transformers and graph neural networks to high-dimensional genomic data, with an engineering background spanning DevOps/SRE and backend development."
+  summary: "Machine-learning researcher with an engineering background. At OIST I apply self-supervised learning and graph neural networks to genomic data; before that I worked in DevOps, SRE and backend engineering."
 
   social_networks:
     - network: GitHub
@@ -63,11 +62,11 @@ cv:
         url: https://www.oist.jp/
         start_date: 2026-02
         end_date: Present
-        summary: "Genomics & Regulatory Systems Unit, supervised by Prof. Nicholas Luscombe and Dr. Charles Plessy — research at the intersection of AI and bioinformatics."
+        summary: "Genomics & Regulatory Systems Unit, with Prof. Nicholas Luscombe and Dr. Charles Plessy."
         highlights:
-          - Applying advanced deep learning architectures — self-supervised learning and graph neural networks — to decode genomic rearrangement patterns.
-          - Representing pairwise genome alignments through a multimodal approach to uncover structural variation at scale.
-          - Managing the end-to-end computational pipeline on an HPC cluster with Slurm and Singularity for scalability and reproducibility.
+          - Self-supervised learning and graph neural networks to decode genomic rearrangement patterns.
+          - Multimodal representations of pairwise genome alignments to find structural variation at scale.
+          - End-to-end HPC pipeline with Slurm and Singularity.
 
       - company: ICT Group
         position: DevOps Engineer
@@ -75,8 +74,8 @@ cv:
         start_date: 2025-08
         end_date: 2026-01
         highlights:
-          - Supported enterprise infrastructure by deploying and troubleshooting containerized services on Kubernetes.
-          - Built monitoring and centralized-logging workflows with Prometheus, Grafana, Filebeat, and the Elastic Stack.
+          - Deployed and troubleshot containerized services on Kubernetes.
+          - Built monitoring and centralized logging with Prometheus, Grafana, Filebeat and the Elastic Stack.
 
       - company: Neshan
         position: Site Reliability Engineering Intern
@@ -84,18 +83,17 @@ cv:
         url: https://neshan.org/
         start_date: 2025-07
         end_date: 2025-08
-        summary: "Intensive bootcamp on Site Reliability Engineering."
         highlights:
-          - Hands-on experience in system administration, infrastructure automation, container orchestration, and monitoring systems.
+          - "Intensive SRE bootcamp: system administration, infrastructure automation, container orchestration and monitoring."
 
       - company: Center for Information Systems and Data Science, Sharif University of Technology
         position: Research Assistant
         location: Tehran, Iran
         start_date: 2025-01
         end_date: 2025-06
-        summary: "Supervised by Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban."
+        summary: "With Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban."
         highlights:
-          - Conducted research on predictive maintenance for batteries and bearings using Transformers and diffusion models.
+          - Predictive maintenance for batteries and bearings with Transformers and diffusion models.
 
       - company: Yektanet
         position: Software Engineering Intern
@@ -104,7 +102,7 @@ cv:
         start_date: 2024-06
         end_date: 2024-07
         highlights:
-          - Developed Dotanet Ad Server features (ad retrieval, auctions, click/impression tracking) with Go, Docker, PostgreSQL, and Kafka, ensuring scalability across multiple publisher websites.
+          - "Dotanet ad server: ad retrieval, auctions and click/impression tracking in Go, PostgreSQL, Kafka and Docker."
 
       - company: Amirkabir University of Technology & Sharif University of Technology
         position: Undergraduate Teaching Assistant
@@ -118,30 +116,30 @@ cv:
           - "Operating Systems, Software Engineering (Prof. Zahra Ghorbanali, Amirkabir University)"
 
     Projects:
+      - name: Goal-Space Planning, reproduced (gsp-fourrooms)
+        url: https://github.com/amirata051/gsp-fourrooms
+        summary: "From-scratch tabular reproduction of Goal-Space Planning with Subgoal Models (Lo et al., JMLR 2024) on FourRooms, with exact subgoal models and an [interactive report](https://amirata051.github.io/gsp-fourrooms/report/)."
+        highlights:
+          - "8 experiments reproduced in about 3 minutes on one CPU core; GSP halves the episodes Sarsa(λ) needs to reach near-optimal (35 → 18)."
+          - Documents three open discrepancies with the paper, with candidate causes.
+
       - name: MyTorch — Deep Learning Framework
         url: https://github.com/amirata051/mytorch
-        summary: "From-scratch, NumPy-based automatic-differentiation and neural-network framework with a PyTorch-like API: forward- and reverse-mode AD, optimizers, training diagnostics, and reproducible run tracking."
+        summary: "From-scratch NumPy autodiff and neural-network framework with a PyTorch-like API: forward- and reverse-mode AD, optimizers, training diagnostics and run tracking."
         highlights:
-          - Built with an agentic coding partner; every generated change validated through 1,200+ Python tests, gradient checks, strict type/lint gates, multi-version CI, and benchmarks.
-          - Detailed English technical documentation.
+          - Built with an agentic coding partner; every change validated by 1,200+ tests, gradient checks, strict type/lint gates and multi-version CI.
 
       - name: Knowledge Graph Generator
         url: https://github.com/amirata051/kg-generator
-        summary: "System to generate knowledge graphs from various data sources in Python."
-        highlights:
-          - Integrated with FalkorDB for graph storage, Kafka for real-time data processing, MinIO for object storage, and Redis for idempotency.
+        summary: "Generates knowledge graphs from documents in Python, with FalkorDB for storage, Kafka for real-time processing, MinIO for objects and Redis for idempotency."
 
       - name: DiffRUL-CMAPSS
         url: https://github.com/amirata051/DiffRUL-CMAPSS
-        summary: "Diffusion-based data augmentation model (PyTorch) for aero-engine remaining-useful-life estimation, based on a 2024 RESS paper."
-        highlights:
-          - Integrates LSTM, Transformers, and Denoising Diffusion Probabilistic Models (DDPM).
+        summary: "Diffusion-based data augmentation (DDPM) with LSTM and Transformer models for aero-engine remaining-useful-life estimation, based on a 2024 RESS paper."
 
       - name: Search Engine
         url: https://github.com/amirata051/Information-Retrieval
-        summary: "Information-retrieval system in Python with TF-IDF and ParsBERT."
-        highlights:
-          - K-Means clustering and FAISS for efficient document retrieval.
+        summary: "Information-retrieval system in Python with TF-IDF, ParsBERT, K-Means clustering and FAISS."
 
       - name: Dotanet
         url: https://github.com/nobletooth/dotanet

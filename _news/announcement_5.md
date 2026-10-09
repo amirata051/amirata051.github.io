@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started building [MyTorch](https://github.com/amirata051/mytorch), a from-scratch automatic-differentiation and neural-network framework with a PyTorch-like API — now at 10k+ lines and 1,200+ tests.
+Started [MyTorch](https://github.com/amirata051/mytorch), a deep learning framework built from scratch to learn how PyTorch works.

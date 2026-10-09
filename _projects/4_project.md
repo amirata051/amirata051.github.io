@@ -1,17 +1,20 @@
 ---
 layout: page
-title: Applicant Tracking System (ATS)
-description: NLP-based CV ranking web application
-importance: 4
+title: Applicant Tracking System
+description: Ranks CVs against a job description using sentence embeddings.
+importance: 5
 category: engineering
+org: Team project
+period: 2025
+stack: [Flask, SentenceTransformers, Docker]
+links:
+  - { label: Code, url: "https://github.com/AmirmahdiTavakoli/ATS", icon: fa-brands fa-github }
 related_publications: false
-github: https://github.com/AmirmahdiTavakoli/ATS
 ---
 
-An NLP-based web application built with Python, Flask, and Docker that ranks CVs against job descriptions using RESTful APIs.
+<p class="pj-page-meta">{% if page.org %}{{ page.org }} · {% endif %}{{ page.period }}{% for link in page.links %} · <a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.label }}</a>{% endfor %}</p>
 
-### Highlights
+A web app that takes a job description and a batch of CVs (PDF or text) and returns the best matches.
 
-- **SentenceTransformers** for semantic embeddings
-- Cosine similarity for CV-to-job-description ranking
-- Containerized with Docker for reproducible deployment
+- **Ranking.** SentenceTransformers embeddings scored by cosine similarity.
+- **App.** Flask with RESTful endpoints, sanitised uploads, and Docker for deployment.

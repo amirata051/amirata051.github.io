@@ -2,18 +2,17 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Amir Ata Ghaffarian # the website title (if blank, full name will be used instead)
+title: blank # the website title (if blank, full name will be used instead — renders the first name in bold)
 first_name: Amir Ata
 middle_name:
 last_name: Ghaffarian
 contact_note: >
-  Email is the best way to reach me — I read everything and try to reply within a day or two.
+  Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Amir Ata Ghaffarian — Research Intern in the Genomics & Regulatory Systems Unit at OIST, applying self-supervised learning, Transformers, and graph neural networks to genomic rearrangements. Interested in world models & RL, robotics, embodied AI, LLMs, neuroscience, and computational biology.
+  Amir Ata Ghaffarian — Research Intern at OIST working on self-supervised learning and graph neural networks for genomics. Interested in world models, reinforcement learning, embodied AI and computational biology.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: Amir Ata Ghaffarian, machine learning, deep learning, self-supervised learning, graph neural networks, Transformers, world models, reinforcement learning, embodied AI, large language models, genomics, computational biology, OIST, MyTorch, PhD applicant # add your own keywords or leave empty
+  Built with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>.
+keywords: Amir Ata Ghaffarian, machine learning, deep learning, self-supervised learning, graph neural networks, reinforcement learning, goal-space planning, world models, embodied AI, genomics, computational biology, OIST, MyTorch, PhD applicant # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -83,7 +82,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false # footer sits after the content instead of a fixed bar
 search_enabled: true
 socials_in_search: true
 posts_in_search: false # blog is disabled; keep the template posts out of the search palette

@@ -1,19 +1,20 @@
 ---
 layout: page
 title: Dotanet Ad Server
-description: A scalable ad-serving platform with auctions and real-time tracking
-importance: 5
+description: A team-built ad-serving platform with real-time auctions and click and impression tracking.
+importance: 4
 category: engineering
+org: Yektanet internship
+period: 2024
+stack: [Go, PostgreSQL, Kafka, Docker]
+links:
+  - { label: Code, url: "https://github.com/nobletooth/dotanet", icon: fa-brands fa-github }
 related_publications: false
-github: https://github.com/nobletooth/dotanet
 ---
 
-**Yektanet** — Jun 2024 – Jul 2024
+<p class="pj-page-meta">{% if page.org %}{{ page.org }} · {% endif %}{{ page.period }}{% for link in page.links %} · <a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.label }}</a>{% endfor %}</p>
 
-A scalable advertising platform written in Go, developed during my software-engineering internship at Yektanet and maintained since. It handles the full ad-serving loop across multiple publisher websites.
+Built with a team of interns during my software-engineering internship at Yektanet: an ad server, an event service, an advertiser and publisher panel, and a demo publisher website.
 
-### Highlights
-
-- Ad retrieval and real-time **auctions** exposed through RESTful APIs
-- Click and impression **tracking** with an eye to throughput and scalability
-- Built on **Go**, **PostgreSQL**, and **Kafka**, containerized with Docker
+- **My part.** Ad retrieval, auctions, and click and impression tracking, served through RESTful APIs.
+- **Stack.** Go, PostgreSQL and Kafka, containerized with Docker, designed to scale across many publisher websites.
