@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started as a Research Assistant at the **Sharif Center for Information Systems and Data Science**, working on diffusion-based predictive maintenance under Dr. Babak Khalaj and Dr. Mohammad Hossein Rohban.
+Started as a Research Assistant at Sharif University's Center for Information Systems and Data Science.

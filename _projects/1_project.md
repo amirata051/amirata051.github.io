@@ -1,32 +1,26 @@
 ---
 layout: page
 title: Scrambling in the Tree of Life
-description: Self-supervised deep learning for comparative genomic rearrangement analysis
+description: Self-supervised learning of genome-rearrangement patterns from pairwise whole-genome alignments.
 importance: 1
 category: research
+org: OIST
+period: 2026 – present
+stack: [PyTorch DDP, Set Transformer, VICReg, Slurm]
 related_publications: false
 ---
 
-**OIST Genomics & Regulatory Systems Unit** — Feb 2026 – Present
-Supervised by Prof. Nicholas Luscombe and Dr. Charles Plessy
+<p class="pj-page-meta">{% if page.org %}{{ page.org }} · {% endif %}{{ page.period }}{% for link in page.links %} · <a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.label }}</a>{% endfor %}</p>
 
-As genomes diverge over evolutionary time, they undergo large-scale structural rearrangements — translocations, inversions, duplications, fissions, and fusions. This project asks whether a **self-supervised deep learning model** can learn a compact, biologically meaningful latent geometry of these rearrangements directly from raw pairwise alignment structure, without labelled topology annotations.
+As genomes diverge they rearrange: inversions, translocations, duplications, fissions and fusions. This project asks whether a self-supervised model can learn a meaningful geometry of these rearrangements directly from alignment structure, without labelled topologies. Supervised by Prof. Nicholas Luscombe and Dr. Charles Plessy.
 
 ### Approach
 
-Pairwise whole-genome alignments are encoded as **point clouds** — unordered sets of aligned blocks, each featurised by genomic coordinates, strand orientation, and alignment quality. A **Set Transformer** models pairwise interactions between blocks via self-attention, and a **Pooling by Multihead Attention (PMA)** module aggregates the variable-size set into a fixed-dimension latent vector. The model is trained with the **VICReg** self-supervised objective, enforcing invariance between views, variance regularization to prevent representational collapse, and covariance penalties to decorrelate latent dimensions.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <ul>
-            <li>Set Transformer + PMA pooling on 5D genomic point clouds</li>
-            <li>VICReg self-supervised loss</li>
-            <li>PyTorch DDP across 4x A100 GPUs on OIST's Saion HPC cluster</li>
-            <li>BF16 mixed precision, Flash Attention, torch.compile</li>
-        </ul>
-    </div>
-</div>
+- **Data.** Each pairwise whole-genome alignment becomes a 5D point cloud of aligned blocks: genomic coordinates, strand and alignment quality.
+- **Model.** A Set Transformer models interactions between blocks, and Pooling by Multihead Attention maps each variable-size set to one embedding.
+- **Objective.** VICReg: invariance across views, variance against collapse, covariance to decorrelate dimensions.
+- **Scale.** PyTorch DDP on 4× A100 GPUs on OIST's Saion cluster, with BF16, Flash Attention and `torch.compile`.
 
 ### Status
 
-Currently validating whether learned clusters reflect genomic topology versus domain identity, and preparing a submission to a NeurIPS 2026 workshop on machine learning for genomics.
+Ongoing. I am currently testing whether the learned clusters reflect genomic topology rather than domain identity.

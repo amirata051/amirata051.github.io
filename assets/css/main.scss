@@ -1,0 +1,526 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* ==========================================================================
+   Site customisations
+   Everything above this block is al_folio_core's upstream main.scss, unchanged;
+   this file overrides it locally (acknowledged in .al-folio-overrides.yml).
+   ========================================================================== */
+
+:root {
+  // The theme's #828282 grey is 3.9:1 on white; #6b6b6b is 5.3:1 (dark: #9a9a9a on #1c1c1d is 6:1).
+  --global-text-color-light: #6b6b6b;
+  --site-muted: var(--global-text-color-light);
+  --site-border: rgba(0, 0, 0, 0.09);
+  --site-border-hover: color-mix(in srgb, var(--global-theme-color) 45%, transparent);
+  --site-chip-bg: rgba(0, 0, 0, 0.05);
+  --site-shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.07);
+  --site-radius: 0.6rem;
+}
+
+html[data-theme="dark"] {
+  --global-text-color-light: #9a9a9a;
+  --site-border: rgba(255, 255, 255, 0.12);
+  --site-chip-bg: rgba(255, 255, 255, 0.08);
+  --site-shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+// Body copy: lighter emphasis to suit Roboto 300, and a readable measure on project pages.
+.post article p strong,
+.post article li strong {
+  font-weight: 500;
+}
+
+.post > article > p,
+.post > article > ul,
+.post > article > ol,
+.post > article > h3 {
+  max-width: 44rem;
+}
+
+.post > article > p {
+  line-height: 1.65;
+}
+
+// Footer: sits after the content (footer_fixed: false) instead of covering it.
+footer.sticky-bottom {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.8125rem;
+
+  .container {
+    color: var(--global-text-color-light);
+  }
+}
+
+// Navbar: the magnifier alone is enough; ctrl+k / cmd+k still opens search.
+#search-toggle .nav-link {
+  font-size: 0;
+}
+
+#search-toggle .nav-link i {
+  font-size: 1rem;
+}
+
+// About: profile photo cross-fades into the painted version on hover (tap on touch screens).
+.profile picture {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--site-radius);
+  box-shadow:
+    0 2px 5px #00000029,
+    0 2px 10px #0000001f;
+  background: url("{{ '/assets/img/prof_pic_painting.jpg' | relative_url }}") center / cover no-repeat;
+}
+
+.profile picture img {
+  display: block;
+  box-shadow: none;
+  transition: opacity 0.6s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .profile picture:hover img {
+    opacity: 0;
+  }
+}
+
+.profile picture.is-painting img {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile picture img {
+    transition: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    max-width: 16rem;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+// About: news as a quiet two-column list.
+.news {
+  table {
+    margin-bottom: 0;
+  }
+
+  th {
+    font-weight: 400;
+    color: var(--site-muted);
+    white-space: nowrap;
+    padding-left: 0;
+    font-variant-numeric: tabular-nums;
+  }
+
+  td {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .news {
+    tr,
+    th,
+    td {
+      display: block;
+      width: auto !important;
+      padding-left: 0;
+    }
+
+    th {
+      padding-bottom: 0;
+    }
+
+    td {
+      padding-top: 0.15rem;
+      padding-bottom: 0.9rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .news th {
+    width: 7.5rem !important; // beats the theme's inline width: 20%
+  }
+
+  .profile.float-right {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// Page headers and project-page subheadings.
+.post-description {
+  color: var(--global-text-color-light);
+}
+
+.post > article > h3 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .post-title {
+    font-size: 2rem;
+  }
+}
+
+// Shared card, chip and heading styles (projects and repositories).
+.pj-card,
+.rp-card,
+.stat {
+  background-color: var(--global-card-bg-color);
+  border: 1px solid var(--site-border);
+  border-radius: var(--site-radius);
+}
+
+.pj-card,
+.rp-card {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    border-color: var(--site-border-hover);
+    box-shadow: var(--site-shadow-hover);
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pj-card,
+  .rp-card {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: auto 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.32rem 0.55rem;
+    border-radius: 999px;
+    background-color: var(--site-chip-bg);
+    color: var(--site-muted);
+    font-size: 0.72rem;
+    line-height: 1;
+  }
+}
+
+// Section labels (projects index, and the home page's linked section headings such as "news").
+.pj-heading,
+.post > article > h2:has(> a) {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 2.25rem 0 1rem;
+  color: var(--site-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: var(--global-divider-color);
+  }
+}
+
+.pj-section:first-child .pj-heading {
+  margin-top: 0.5rem;
+}
+
+.post > article > h2:has(> a) {
+  margin: 3rem 0 1rem;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.pj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
+.pj-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.15rem 1.25rem 1.1rem;
+}
+
+.pj-meta {
+  margin: 0 0 0.35rem;
+  color: var(--site-muted);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.pj-title {
+  margin: 0 0 0.4rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.pj-link {
+  color: var(--global-text-color);
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+
+  // Stretch the title link over the whole card.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    &::after {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
+    }
+  }
+}
+
+.pj-card:hover .pj-link {
+  color: var(--global-theme-color);
+}
+
+.pj-desc {
+  margin: 0 0 0.85rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.pj-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+}
+
+// Project pages.
+.pj-page-meta {
+  margin: -0.25rem 0 1.5rem;
+  color: var(--site-muted);
+  font-size: 0.85rem;
+
+  a {
+    white-space: nowrap;
+  }
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+}
+
+.stat-value {
+  color: var(--global-theme-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  color: var(--site-muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+// Repositories.
+.rp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 1rem;
+}
+
+.rp-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.1rem 1.25rem;
+  color: var(--global-text-color);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+}
+
+.rp-name {
+  color: var(--global-text-color);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.95rem;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+
+  i {
+    margin-right: 0.3rem;
+  }
+}
+
+.rp-card:hover .rp-name {
+  color: var(--global-theme-color);
+}
+
+.rp-owner {
+  color: var(--site-muted);
+  font-weight: 400;
+}
+
+.rp-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.rp-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-top: auto;
+  padding-top: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.rp-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-right: 0.25rem;
+  color: var(--site-muted);
+}
+
+.rp-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background-color: #8b949e;
+}
+
+.rp-dot-python {
+  background-color: #3572a5;
+}
+
+.rp-dot-go {
+  background-color: #00add8;
+}
+
+.rp-topic {
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  background-color: var(--site-chip-bg);
+  color: var(--site-muted);
+  line-height: 1;
+}
+
+// CV: lighter cards, smaller section titles, no stray list bullets.
+.cv {
+  .card {
+    border-radius: var(--site-radius);
+    box-shadow: none;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  ul.list-group {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  // Entry titles look the same whether or not they carry a link.
+  h6.title a {
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}

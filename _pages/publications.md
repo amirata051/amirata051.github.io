@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: No peer-reviewed publications yet — my first preprints are in progress. Manuscripts and talks will appear here as they become available.
-nav: true
+nav: false # hidden from the navbar until the first preprint is out; set to true to show it again
 nav_order: 2
 ---
 

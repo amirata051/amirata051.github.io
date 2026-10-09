@@ -1,18 +1,20 @@
 ---
 layout: page
 title: Knowledge Graph Generator
-description: A system for generating knowledge graphs from heterogeneous data sources
+description: Turns PDF documents into an evolving knowledge graph through a containerized, idempotent pipeline.
 importance: 2
 category: engineering
+period: 2025
+stack: [FastAPI, GraphRAG-SDK, FalkorDB, Kafka, MinIO]
+links:
+  - { label: Code, url: "https://github.com/amirata051/kg-generator", icon: fa-brands fa-github }
 related_publications: false
-github: https://github.com/amirata051/kg-generator
 ---
 
-A system to generate knowledge graphs from various data sources using Python, designed around a scalable, idempotent processing pipeline.
+<p class="pj-page-meta">{% if page.org %}{{ page.org }} · {% endif %}{{ page.period }}{% for link in page.links %} · <a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.label }}</a>{% endfor %}</p>
 
-### Stack
+Upload PDFs, and a worker extracts their content and grows a knowledge graph you can explore in the browser.
 
-- **FalkorDB** for graph storage
-- **Kafka** for real-time data processing
-- **MinIO** for object storage
-- **Redis** for ensuring idempotency across pipeline stages
+- **Pipeline.** Unstructured-IO parses PDFs, GraphRAG-SDK builds the graph, and FalkorDB stores it.
+- **Scaling.** Kafka queues work asynchronously, MinIO stores the files, and Redis hashes keep every stage idempotent.
+- **Interface.** A FastAPI backend and a Streamlit frontend, all orchestrated with Docker Compose.

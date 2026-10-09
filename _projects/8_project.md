@@ -1,25 +1,24 @@
 ---
 layout: page
 title: MyTorch
-description: A from-scratch deep learning framework you can read end to end, built to learn how PyTorch works
+description: A deep learning framework built from scratch to learn how PyTorch works.
 importance: 1
 category: engineering
+org: Personal project
+period: 2026
+stack: [Python, NumPy, Autodiff, Rust]
+links:
+  - { label: Code, url: "https://github.com/amirata051/mytorch", icon: fa-brands fa-github }
 related_publications: false
-github: https://github.com/amirata051/mytorch
 ---
 
-**Personal project** — Jun 2026 – Present
+<p class="pj-page-meta">{% if page.org %}{{ page.org }} · {% endif %}{{ page.period }}{% for link in page.links %} · <a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.label }}</a>{% endfor %}</p>
 
-MyTorch is a from-scratch automatic-differentiation and neural-network library written in Python on top of NumPy, with an API that deliberately mirrors PyTorch. It started as a reimplementation of micrograd and grew into a ~10,600-line framework small enough to read in full: every gradient rule is derived by hand and lives next to the operation it belongs to.
+A from-scratch automatic-differentiation and neural-network library with a PyTorch-like API, small enough to read end to end: about 10,600 lines, with every gradient rule derived by hand next to its operation.
 
-### What it implements
+- **Two engines, one design.** A zero-dependency scalar engine and a NumPy tensor engine with strict broadcasting and source-line provenance in every error.
+- **Autodiff.** Reverse and forward mode, Hessian-vector products, and `gradcheck` on every operation.
+- **Training stack.** `nn` modules, SGD/Adam/AdamW, a seeded `DataLoader`, and run recording.
+- **Diagnostics that name the problem.** Saturated activations, vanishing or exploding gradients, dead units and mis-set learning rates, reported per layer.
 
-- **Two engines sharing one design** — a zero-dependency scalar engine (one node per number) and a NumPy-backed tensor engine with strict broadcasting and provenance tracking
-- **Reverse- and forward-mode AD**, exact Hessian-vector products, and finite-difference `gradcheck`
-- **`nn` / `optim` / `data` modules** — `Module` with parameter auto-discovery, `Linear`, `BatchNorm1d`, `Sequential`, losses; SGD, Adam, AdamW; seeded `DataLoader`
-- **Training diagnostics that name the problem** — saturated activations, vanishing/exploding gradients, dead units, and mis-set learning rates, reported per layer with the threshold that fired
-- **A compiled tape** that lowers a graph to a flat instruction stream with liveness analysis, neural ODEs with adjoint backprop, physical-unit propagation, and reproducible `Run` recording
-
-### How it was built
-
-Developed with an agentic coding partner, with every generated change validated through 1,200+ Python tests, gradient checks, strict type and lint gates, CI across Python 3.11–3.14, and benchmarks — the README reports the numbers that came out badly as well as the ones that didn't.
+Built with an agentic coding partner, with every change validated by 1,200+ tests, gradient checks, strict type and lint gates, and CI on Python 3.11–3.14.

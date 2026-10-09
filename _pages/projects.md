@@ -2,64 +2,39 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Selected research and engineering projects — from self-supervised learning, diffusion models, and a from-scratch deep learning framework to information retrieval and scalable backend systems.
+description: Research and engineering work. Open a card for details, figures and code.
 nav: true
 nav_order: 3
 display_categories: [research, engineering]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
+<!-- Cards are rendered here (not by the theme's projects include) so they can show period, stack and links. -->
+<div class="pj">
   {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
+    {% assign items = site.projects | where: "category", category | sort: "importance" %}
+    <section class="pj-section" aria-labelledby="pj-{{ category }}">
+      <h2 class="pj-heading" id="pj-{{ category }}">{{ category }}</h2>
+      <div class="pj-grid">
+        {% for project in items %}
+          <article class="pj-card">
+            <p class="pj-meta">{% if project.org %}{{ project.org }} · {% endif %}{{ project.period }}</p>
+            <h3 class="pj-title"><a class="pj-link" href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+            <p class="pj-desc">{{ project.description }}</p>
+            {% if project.stack %}
+              <ul class="chips" aria-label="Stack">
+                {% for item in project.stack %}<li>{{ item }}</li>{% endfor %}
+              </ul>
+            {% endif %}
+            {% if project.links %}
+              <p class="pj-actions">
+                {% for link in project.links %}
+                  <a href="{{ link.url }}"><i class="{{ link.icon }}"></i> {{ link.label }}</a>
+                {% endfor %}
+              </p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </section>
   {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
 </div>
