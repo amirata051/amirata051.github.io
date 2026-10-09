@@ -8,10 +8,11 @@ nav_order: 5
 ---
 
 <div class="rp-grid">
+  {% assign me = site.data.socials.github_username %}
   {% for item in site.data.repositories.repos %}
     {% assign parts = item.repo | split: '/' %}
     <a class="rp-card" href="https://github.com/{{ item.repo }}">
-      <span class="rp-name"><i class="fa-brands fa-github" aria-hidden="true"></i> <span class="rp-owner">{{ parts[0] }}/</span>{{ parts[1] }}</span>
+      <span class="rp-name"><i class="fa-brands fa-github" aria-hidden="true"></i> {% if parts[0] != me %}<span class="rp-owner">{{ parts[0] }}/</span>{% endif %}{{ parts[1] }}</span>
       <span class="rp-desc">{{ item.description }}</span>
       <span class="rp-foot">
         <span class="rp-lang"><span class="rp-dot rp-dot-{{ item.language | slugify }}" aria-hidden="true"></span>{{ item.language }}</span>

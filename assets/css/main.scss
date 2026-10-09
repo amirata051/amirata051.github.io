@@ -98,7 +98,7 @@ footer.sticky-bottom {
   display: block;
   position: relative;
   overflow: hidden;
-  border-radius: 0.25rem;
+  border-radius: var(--site-radius);
   box-shadow:
     0 2px 5px #00000029,
     0 2px 10px #0000001f;
@@ -143,10 +143,11 @@ footer.sticky-bottom {
   }
 
   th {
-    font-weight: 500;
+    font-weight: 400;
     color: var(--site-muted);
     white-space: nowrap;
     padding-left: 0;
+    font-variant-numeric: tabular-nums;
   }
 
   td {
@@ -172,6 +173,34 @@ footer.sticky-bottom {
       padding-top: 0.15rem;
       padding-bottom: 0.9rem;
     }
+  }
+}
+
+@media (min-width: 576px) {
+  .news th {
+    width: 7.5rem !important; // beats the theme's inline width: 20%
+  }
+
+  .profile.float-right {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// Page headers and project-page subheadings.
+.post-description {
+  color: var(--global-text-color-light);
+}
+
+.post > article > h3 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media (max-width: 575.98px) {
+  .post-title {
+    font-size: 2rem;
   }
 }
 
@@ -227,16 +256,18 @@ footer.sticky-bottom {
   }
 }
 
-// Projects index.
-.pj-heading {
+// Section labels (projects index, and the home page's linked section headings such as "news").
+.pj-heading,
+.post > article > h2:has(> a) {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin: 2.25rem 0 1rem;
   color: var(--site-muted);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 
   &::after {
@@ -249,6 +280,19 @@ footer.sticky-bottom {
 
 .pj-section:first-child .pj-heading {
   margin-top: 0.5rem;
+}
+
+.post > article > h2:has(> a) {
+  margin: 3rem 0 1rem;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
 }
 
 .pj-grid {
@@ -267,9 +311,9 @@ footer.sticky-bottom {
 .pj-meta {
   margin: 0 0 0.35rem;
   color: var(--site-muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
 }
 
 .pj-title {
@@ -392,7 +436,7 @@ footer.sticky-bottom {
   color: var(--global-text-color);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 500;
   overflow-wrap: anywhere;
 
   i {
