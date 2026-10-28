@@ -1,4 +1,4 @@
-# Source of truth: assets/pdf/Amirata_Ghaffarian_CV.pdf (keep both in sync; the gsp-fourrooms project is web-only until the PDF is updated).
+# Source of truth: assets/pdf/Amirata_Ghaffarian_CV.pdf (keep both in sync).
 # Rendered by the al_folio_cv plugin on /cv/ (RenderCV-style field names).
 cv:
   name: Amir Ata Ghaffarian
@@ -104,13 +104,13 @@ cv:
         highlights:
           - "Dotanet ad server: ad retrieval, auctions and click/impression tracking in Go, PostgreSQL, Kafka and Docker."
 
-      - company: Amirkabir University of Technology & Sharif University of Technology
+      - company: Amirkabir University of Technology
         position: Undergraduate Teaching Assistant
         location: Tehran, Iran
         start_date: 2022
         end_date: 2025
         highlights:
-          - "Machine Learning (Prof. Ali Sharifi-Zarchi, Sharif University)"
+          - "Machine Learning (Prof. Ali Zarchi)"
           - "Advanced Programming, AI, Algorithms (Prof. Mehdi Ghatee, Amirkabir University)"
           - "Image Processing (Prof. Mostafa Shamsi, Amirkabir University)"
           - "Operating Systems, Software Engineering (Prof. Zahra Ghorbanali, Amirkabir University)"
