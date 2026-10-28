@@ -77,13 +77,13 @@
       "highlights": ["Dotanet ad server: ad retrieval, auctions and click/impression tracking in Go, PostgreSQL, Kafka and Docker."]
     },
     {
-      "name": "Amirkabir University of Technology & Sharif University of Technology",
+      "name": "Amirkabir University of Technology",
       "position": "Undergraduate Teaching Assistant",
       "location": "Tehran, Iran",
       "startDate": "2022-01-01",
       "endDate": "2025-01-01",
       "highlights": [
-        "Machine Learning (Prof. Ali Sharifi-Zarchi, Sharif University)",
+        "Machine Learning (Prof. Ali Zarchi)",
         "Advanced Programming, AI, Algorithms (Prof. Mehdi Ghatee, Amirkabir University)",
         "Image Processing (Prof. Mostafa Shamsi, Amirkabir University)",
         "Operating Systems, Software Engineering (Prof. Zahra Ghorbanali, Amirkabir University)"
